@@ -1,13 +1,15 @@
+const EMPRESA = 'LATAM AIRLINES BRASIL';
+
 db.resumoVoos.insertOne({
-  empresa: "LATAM AIRLINES BRASIL",
+  empresa: EMPRESA,
   totalVoosDomesticos: db.voos.find({
-    "empresa.nome": "LATAM AIRLINES BRASIL",
-    natureza: "Doméstica",
+    'empresa.nome': EMPRESA,
+    natureza: 'Doméstica',
   }).count(),
 });
 
 db.resumoVoos.findOne({
-  empresa: "LATAM AIRLINES BRASIL",
+  empresa: EMPRESA,
 }, {
   _id: 0,
   empresa: 1,
