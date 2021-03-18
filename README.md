@@ -25,7 +25,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 - [Como desenvolver](#como-desenvolver)
 - [Requisitos do projeto](#requisitos-do-projeto)
   - [Lista de requisitos](#lista-de-requisitos)
-- [Depois de terminar (Opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
+- [Depois de terminar o desenvolvimento (Opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
 - [Avisos finais](#avisos-finais)
 
 # Habilidades
@@ -73,6 +73,7 @@ Porém, você usará um banco de dados diferente dos utilizados nos exemplos e e
 ## Desenvolvimento
 
 Nesse projeto você vai elaborar _queries_ em `mongo` para:
+
 - Consultar a coleção do projeto, usando vários campos para filtrar essa busca, 
 - Deletar alguns voos conforme outros filtros.
 - Contar voos compreendidos nos filtros.
@@ -90,9 +91,9 @@ Nesse projeto você vai elaborar _queries_ em `mongo` para:
 ## Antes de começar a desenvolver
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-0x-project-mongodb-dataflights.git`.
+  * `git clone https://github.com/tryber/sd-0x-mongodb-dataflights.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-0x-project-mongodb-dataflights`
+    * `cd sd-0x-mongodb-dataflights`
 
 2. Crie uma branch a partir da branch `master`
   * Verifique que você está na branch `master`
@@ -122,13 +123,13 @@ Nesse projeto você vai elaborar _queries_ em `mongo` para:
   * Usando o exemplo anterior: `git push -u origin seunome-mongodb-dataflights`
 
 6. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-mongodb-dataflights/pulls)
+  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-mongodb-dataflights/pulls)
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
   * Clique no botão verde _"Create pull request"_
   * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
   * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-mongodb-dataflights/pulls) e confira que o seu _Pull Request_ está criado
+  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-mongodb-dataflights/pulls) e confira que o seu _Pull Request_ está criado
 
 ---
 
@@ -200,7 +201,7 @@ Esse script passará por **todos os desafios** e imprimirá um relatório indica
 
 Durante a execução do projeto, utilize _queries_ do mongo para retornar os valores pedidos nos requisitos.
 
-Você deve criar uma pasta chamada `challenges`, contendo dentro dela arquivos no formato `desafioX.js` onde `X` é o número do requisito.
+Você deve criar uma pasta chamada `challenges` na raíz do projeto, contendo dentro dela arquivos no formato `desafioX.js` onde `X` é o número do requisito.
 
 Dentro dos arquivos `desafioX.js`, **crie uma query** ou mais (se necessário), para retornar o que o requisito pede. 
 
@@ -214,21 +215,21 @@ Dentro dos arquivos `desafioX.js`, **crie uma query** ou mais (se necessário), 
 
 #### 5 - Retorne o `vooId` do décimo ao décimo segundo documento da coleção `voos`.
 
-#### 6 -  Retorne apenas os campos `empresa.sigla`, `empresa.nome` e `passageiros` do voo com o campo `vooId` igual a `756807`.
+#### 6 - Retorne apenas os campos `empresa.sigla`, `empresa.nome` e `passageiros` do voo com o campo `vooId` igual a `756807`.
 
-#### 7 -  Retorne a quantidade de voos em que o ano seja menor do que `2017`.
+#### 7 - Retorne a quantidade de voos em que o ano seja menor do que `2017`.
 
 #### 8 - Retorne a quantidade de voos em que o ano seja maior do que `2016`.
 
-#### 9 - Retorne a quantidade de voos entre os anos de `2017` e `2018` 
+#### 9 - Retorne a quantidade de voos entre os anos de `2017` e `2018`.
 
 #### 10 - Retorne apenas os **10** primeiros documentos com voos da empresa `GOL` do ano de `2017`. Exiba apenas os campos `vooId`, `empresa.nome`, `aeroportoOrigem.nome`, `aeroportoDestino.nome`, `mes` e `ano`.
 
 #### 11 - Retorne a quantidade de documentos em que o campo `aeroportoDestino.pais` não seja igual a `ESTADOS UNIDOS`.
 
-#### 12 - Retorne os documentos em que o campo `aeroportoDestino.pais` seja igual a `BRASIL`, `ARGENTINA` ou `CHILE`.
+#### 12 - Retorne a quantidade de documentos em que o campo `aeroportoDestino.pais` seja igual a `BRASIL`, `ARGENTINA` ou `CHILE`.
 
-#### 13 - Retorne os documentos em que o campo `aeroportoDestino.continente` não seja igual a `EUROPA`, `ÁSIA` e `OCEANIA`.
+#### 13 - Retorne a quantidade de documentos em que o campo `aeroportoDestino.continente` não seja igual a `EUROPA`, `ÁSIA` e `OCEANIA`.
 
 #### 14 - Retorne o total de voos em que o país de origem não seja `BRASIL`.
 
@@ -302,6 +303,6 @@ Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362
 
 Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
 
-Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
+Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://bit.ly/2OfLJPn)
 
 O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
