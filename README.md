@@ -19,19 +19,19 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
   - [Desenvolvimento](#desenvolvimento)
   - [Data de entrega](#data-de-entrega)
-- [Intruções para entregar](#intruções-para-entregar)
+- [Intruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
   - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
   - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-  - [Depois de terminar (Opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
 - [Como desenvolver](#como-desenvolver)
 - [Requisitos do projeto](#requisitos-do-projeto)
   - [Lista de requisitos](#lista-de-requisitos)
+- [Depois de terminar o desenvolvimento (Opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
 - [Avisos finais](#avisos-finais)
 
 # Habilidades
 
 - Buscar documentos no banco
-  - Usar filtros na busca
+- Usar filtros na busca
 - Deletar documentos conforme filtro
 - Contar documentos compreendidos nos filtros pedidos
 - Inserir documentos no banco
@@ -69,9 +69,11 @@ Hoje você fará um projeto com o codinome _dataflights_. Neste projeto, você p
 Porém, você usará um banco de dados diferente dos utilizados nos exemplos e exercícios vistos até agora. Chamaremos esse banco de `dataFlights`. As instruções de como restaurar o banco podem ser lidas a seguir.
 
 ---
+
 ## Desenvolvimento
 
 Nesse projeto você vai elaborar _queries_ em `mongo` para:
+
 - Consultar a coleção do projeto, usando vários campos para filtrar essa busca, 
 - Deletar alguns voos conforme outros filtros.
 - Contar voos compreendidos nos filtros.
@@ -84,14 +86,14 @@ Nesse projeto você vai elaborar _queries_ em `mongo` para:
 
 ---
 
-## Instruções para entregar seu projeto
+# Instruções para entregar seu projeto
 
-### ANTES DE COMEÇAR A DESENVOLVER
+## Antes de começar a desenvolver
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-0x-project-mongodb-dataflights.git`.
+  * `git clone https://github.com/tryber/sd-0x-mongodb-dataflights.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-0x-project-mongodb-dataflights`
+    * `cd sd-0x-mongodb-dataflights`
 
 2. Crie uma branch a partir da branch `master`
   * Verifique que você está na branch `master`
@@ -121,17 +123,17 @@ Nesse projeto você vai elaborar _queries_ em `mongo` para:
   * Usando o exemplo anterior: `git push -u origin seunome-mongodb-dataflights`
 
 6. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-mongodb-dataflights/pulls)
+  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-mongodb-dataflights/pulls)
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
   * Clique no botão verde _"Create pull request"_
   * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
   * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-mongodb-dataflights/pulls) e confira que o seu _Pull Request_ está criado
+  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-mongodb-dataflights/pulls) e confira que o seu _Pull Request_ está criado
 
 ---
 
-### DURANTE O DESENVOLVIMENTO
+## Durante o desenvolvimento
 
 * ⚠ **LEMBRE-SE DE CRIAR TODOS OS ARQUIVOS DENTRO DA PASTA `challenges`** ⚠
 
@@ -145,22 +147,6 @@ Nesse projeto você vai elaborar _queries_ em `mongo` para:
   3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
   4. `git push -u origin nome-da-branch` _(para enviar o commit para o repositório remoto na primeira vez que fizer o `push` de uma nova branch)_
   5. `git push` _(para enviar o commit para o repositório remoto após o passo anterior)_
-
----
-
-### DEPOIS DE TERMINAR O DESENVOLVIMENTO (OPCIONAL)
-
-Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
-
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
-
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
-
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
-
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`.
-
-Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
 ---
 
@@ -183,9 +169,9 @@ Aqui encontram-se os requisitos do projeto. Em cada requisito você encontrara u
 
 ---
 
-# Instruções para restaurar o banco de dados `dataFlights`
+## Instruções para restaurar o banco de dados `dataFlights`
 
-1. Abra o terminal e conecte-se à sua instância local do **MongoDB**. Se você receber uma mensagem de erro com uma mensagem como ***Connection refused***, tente reiniciar sua instância ([veja como fazer isso aqui](https://app.betrybe.com/course/back-end/mongodb/introduction/conteudos/conectando)).
+1. Abra o terminal e conecte-se à sua instância local do **MongoDB**. Se você receber uma mensagem de erro com uma mensagem como ***Connection refused***, tente reiniciar sua instância clicando ([nesse link do course](https://app.betrybe.com/course/content/d396e5a2-d5c9-4f3a-b723-1a1d3ea06b3d)) e através do menu lateral, no item `Conectando`.
 
 2. Agora que você tem certeza de que a sua instância está no ar e que você está conectado a ela, digite `exit`. Você voltará ao terminal para iniciar a importação dos dados.
 
@@ -209,13 +195,19 @@ Para executar localmente os testes, é preciso escrever o seguinte no seu termin
 
 Esse script passará por **todos os desafios** e imprimirá um relatório indicando se passou ou não para cada desafio. Como a execução do script **envolve restauração da base de dados `dataFlights`** de um teste para outro, recomenda-se esperar pela sua execução completa.
 
+Para executar somente o teste de um desafio, execute o comando abaixo, substituindo N pelo númedo do desafio
+
+```sh
+./scripts/evaluate.sh desafioN
+```
+
 ---
 
 # Requisitos do projeto
 
 Durante a execução do projeto, utilize _queries_ do mongo para retornar os valores pedidos nos requisitos.
 
-Você deve criar uma pasta chamada `challenges`, contendo dentro dela arquivos no formato `desafioX.js` onde `X` é o número do requisito.
+Você deve criar uma pasta chamada `challenges` na raíz do projeto, contendo dentro dela arquivos no formato `desafioX.js` onde `X` é o número do requisito.
 
 Dentro dos arquivos `desafioX.js`, **crie uma query** ou mais (se necessário), para retornar o que o requisito pede. 
 
@@ -229,21 +221,21 @@ Dentro dos arquivos `desafioX.js`, **crie uma query** ou mais (se necessário), 
 
 #### 5 - Retorne o `vooId` do décimo ao décimo segundo documento da coleção `voos`.
 
-#### 6 -  Retorne apenas os campos `empresa.sigla`, `empresa.nome` e `passageiros` do voo com o campo `vooId` igual a `756807`.
+#### 6 - Retorne apenas os campos `empresa.sigla`, `empresa.nome` e `passageiros` do voo com o campo `vooId` igual a `756807`.
 
-#### 7 -  Retorne a quantidade de voos em que o ano seja menor do que `2017`.
+#### 7 - Retorne a quantidade de voos em que o ano seja menor do que `2017`.
 
 #### 8 - Retorne a quantidade de voos em que o ano seja maior do que `2016`.
 
-#### 9 - Retorne a quantidade de voos entre os anos de `2017` e `2018` 
+#### 9 - Retorne a quantidade de voos entre os anos de `2017` e `2018`.
 
 #### 10 - Retorne apenas os **10** primeiros documentos com voos da empresa `GOL` do ano de `2017`. Exiba apenas os campos `vooId`, `empresa.nome`, `aeroportoOrigem.nome`, `aeroportoDestino.nome`, `mes` e `ano`.
 
 #### 11 - Retorne a quantidade de documentos em que o campo `aeroportoDestino.pais` não seja igual a `ESTADOS UNIDOS`.
 
-#### 12 - Retorne os documentos em que o campo `aeroportoDestino.pais` seja igual a `BRASIL`, `ARGENTINA` ou `CHILE`.
+#### 12 - Retorne a quantidade de documentos em que o campo `aeroportoDestino.pais` seja igual a `BRASIL`, `ARGENTINA` ou `CHILE`.
 
-#### 13 - Retorne os documentos em que o campo `aeroportoDestino.continente` não seja igual a `EUROPA`, `ÁSIA` e `OCEANIA`.
+#### 13 - Retorne a quantidade de documentos em que o campo `aeroportoDestino.continente` não seja igual a `EUROPA`, `ÁSIA` e `OCEANIA`.
 
 #### 14 - Retorne o total de voos em que o país de origem não seja `BRASIL`.
 
@@ -291,8 +283,32 @@ Para isso, escreva no arquivo `desafio28.js` duas queries, **nesta ordem**:
 
 ---
 
-### REVISANDO UM PULL REQUEST
+### Revisando um pull request
 
 Use o conteúdo sobre [Code Review](https://course.betrybe.com/real-life-engineer/code-review/) para te ajudar a revisar os _Pull Requests_.
 
 #VQV 🚀
+
+# Depois de terminar o desenvolvimento (OPCIONAL)
+
+Para sinalizar que o seu projeto está pronto para o _"Code Review"_ dos seus colegas, faça o seguinte:
+
+* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas:
+
+  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
+
+  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
+
+  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-00`.
+
+Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
+
+---
+
+# Avisos finais
+
+Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
+
+Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://bit.ly/2OfLJPn)
+
+O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
